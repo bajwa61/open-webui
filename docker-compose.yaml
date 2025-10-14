@@ -26,7 +26,7 @@ services:
       - 'OLLAMA_BASE_URL=http://ollama:11434'
       - 'WEBUI_SECRET_KEY='
       # Header-based authentication configuration
-      - 'WEBUI_AUTH=true'
+      - 'WEBUI_AUTH=false'
       - 'AUTH_TRUST_EMAIL_HEADER=X-Forwarded-Email'
       - 'OIDC_ENABLED=false'
     extra_hosts:
