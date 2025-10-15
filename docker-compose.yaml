@@ -30,6 +30,8 @@ services:
       - 'HOST=0.0.0.0'
       - 'WEBUI_AUTH_TRUSTED_EMAIL_HEADER=X-Forwarded-Email'
       - 'WEBUI_AUTH_TRUSTED_NAME_HEADER=X-Forwarded-User'
+      # Redirect to ProductManager after logout
+      - 'WEBUI_AUTH_SIGNOUT_REDIRECT_URL=https://jain.bwipholdings.com'
     extra_hosts:
       - host.docker.internal:host-gateway
     restart: unless-stopped
