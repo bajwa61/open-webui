@@ -25,11 +25,11 @@ services:
     environment:
       - 'OLLAMA_BASE_URL=http://ollama:11434'
       - 'WEBUI_SECRET_KEY='
-      - 'ENABLE_PERSISTENT_CONFIG=false'
-      # Trusted header authentication - following official docs
-      - 'HOST=0.0.0.0'
-      - 'WEBUI_AUTH_TRUSTED_EMAIL_HEADER=X-Forwarded-Email'
-      - 'WEBUI_AUTH_TRUSTED_NAME_HEADER=X-Forwarded-User'
+      # - 'ENABLE_PERSISTENT_CONFIG=false'
+      # # Trusted header authentication - following official docs
+      # - 'HOST=0.0.0.0'
+      # - 'WEBUI_AUTH_TRUSTED_EMAIL_HEADER=X-Forwarded-Email'
+      # - 'WEBUI_AUTH_TRUSTED_NAME_HEADER=X-Forwarded-User'
     extra_hosts:
       - host.docker.internal:host-gateway
     restart: unless-stopped
